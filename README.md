@@ -55,6 +55,7 @@ I have worked on several data analysis projects, which are detailed below:
 
 ### 1. Sakila Datawarehousing
 An end-to-end data warehousing project using the Sakila database, demonstrating skills in data modeling, ETL processes, and reporting.
+
 ![Data Pipe](/assets/img/Screenshot 2024-07-01 174451.png)
 ![Data Source](/assets/img/Screenshot 2024-07-01 174524.png)
 ![ETL Process](/assets/img/Screenshot 2024-07-01 174541.png)
