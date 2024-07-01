@@ -4,7 +4,7 @@ Welcome to my Data Analyst Portfolio. This repository showcases my skills and pr
 
 ## About Me
 
-I am Nessim Liamani, a Data Analyst specialized in data analysis and visualization, with experience in database administration. I am proficient in statistical analysis, report creation, and problem-solving. My technical skills include Python, SQL, Tableau/Power BI, VSCode, SSIS, and Azure Data Factory. I also have competencies in business management and finance.
+I am Nessim Liamani, a Data Analyst specialized in data analysis and visualization, with experience in database administration. I am proficient in statistical analysis, report creation, and problem-solving. My technical skills include Python, SQL, PowerShell, Qlik Sense, Tableau/Power BI, VSCode, SSIS, SSAS, MySQL, SQL Server 2022, and Azure Data Factory. I also have competencies in business management and finance.
 
 - **Location:** Brussels, Belgium
 - **Email:** nessim@liamani.com
