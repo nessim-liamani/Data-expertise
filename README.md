@@ -41,7 +41,7 @@ I completed a comprehensive Data Analyst training program at Bruxelles Formation
 24. **Machine Learning** - Cédric Van Osselaer - 8 days
 25. **Final Project (Self Study)** - 8 days
 
-**Total Duration:** 99 days
+**Total Duration:** 644 hours training / 99 work days / 144 calendar days
 
 ### Additional Certifications and Trainings
 1. **PC/Network Technician** - Validation De Compétences Fédération WL/BXL, Belgium
