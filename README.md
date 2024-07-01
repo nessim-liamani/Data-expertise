@@ -55,11 +55,11 @@ I have worked on several data analysis projects, which are detailed below:
 
 ### 1. Sakila Datawarehousing
 An end-to-end data warehousing project using the Sakila database, demonstrating skills in data modeling, ETL processes, and reporting.
-![Data Pipe] (/assets/img/Screenshot 2024-07-01 174451.png)
-![Data Source] (/assets/img/Screenshot 2024-07-01 174451.png)
-![ETL Process] (/assets/img/Screenshot 2024-07-01 174451.png)
-![Databases] (/assets/img/Screenshot 2024-07-01 174541.png)
-![Visualization] (/assets/img/Screenshot 2024-07-01 174607.png)
+![Data Pipe](/assets/img/Screenshot 2024-07-01 174451.png)
+![Data Source](/assets/img/Screenshot 2024-07-01 174451.png)
+![ETL Process](/assets/img/Screenshot 2024-07-01 174451.png)
+![Databases](/assets/img/Screenshot 2024-07-01 174541.png)
+![Visualization](/assets/img/Screenshot 2024-07-01 174607.png)
 
 
 ### 2. Police Fatal Shooting
