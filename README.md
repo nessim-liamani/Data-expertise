@@ -12,7 +12,7 @@ I am Nessim Liamani, a Data Analyst specialized in data analysis and visualizati
 
 ## Training
 
-I completed a comprehensive Data Analyst training program at Bruxelles Formation DigitalCity, Belgium. The training covered a wide range of topics, as detailed below:
+I completed a comprehensive Data Analyst training program at Bruxelles Formation DigitalCity, Belgium. The BStorm provided, training covered a wide range of topics as detailed below:
 
 ### List of Modules (trainer name) - full time duration
 1. **CEFORA/KARIBU (Soft Skills)** - Anouchka WALHA - 18 days
