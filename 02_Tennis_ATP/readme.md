@@ -22,10 +22,10 @@ The ATP and WTA want an app that will enable them to store information about the
 - Manage rankings
 - Manage broadcasting rights
 
-#### 2.2. Your Tasks
+#### 2.2. Tasks
 **Business Analysis:**
 
-- Understand the rules of the game
+- Understanding the rules of the game
 - Model the process of tournament organization
 - Model the process of anti-doping testing
 
@@ -46,7 +46,6 @@ The ATP and WTA want to collect and store data to:
 - Propose data-based strategies for players and coaches through self-service descriptive statistics and correlations
 - Promote factual analysis over intuition with descriptive stats and causal relationships for journalists and commentators ([Infosys Tennis Experience](https://www.infosys.com/stories/immersed-game/Documents/tennis-experience-digital-age.pdf))
 
-#### 3.2. Case Study
 Here are some articles explaining/showing how data can be used in tennis:
 
 - [Using real-time sports statistics for fan engagement](http://www.ibmbigdatahub.com/blog/wimbledon-using-real-time-sports-statistics-fan-engagement)
@@ -55,7 +54,7 @@ Here are some articles explaining/showing how data can be used in tennis:
 - [Big Data will guide tennis players to the No. 1 spot](https://www.bbva.com/en/wta-ranking-big-data-will-guide-tennis-players-to-the-no-1-spot/)
 - [Infosys Tennis Experience in the Digital Age](https://www.infosys.com/stories/immersed-game/Documents/tennis-experience-digital-age.pdf)
 
-#### 3.3. Case Study
+#### 3.2. Case Study
 Key questions the organizations want to answer include:
 
 - Who won the most matches between 2010 and 2017?
@@ -65,7 +64,6 @@ Key questions the organizations want to answer include:
 - Who won the most matches on grass/clay/hard court?
 - Who won the most Davis Cup/Fed Cup matches?
 
-#### 3.4. Case Study
 Additional questions include:
 
 - How many matches has a player won after losing the first two sets?
@@ -86,9 +84,9 @@ Manage the project with standard project management practices:
 - Assign resources to tasks
 - Manage risks
 
-Use 'OpenProj' or 'ProjectLibre' and provide a filled file to import into either tool.
+To use 'Microsoft Project', 'OpenProj' or 'ProjectLibre' and providing a filled file to import into either tool.
 
-#### 4.2. Your Tasks: Planning
+#### 4.2. Tasks: Planning
 The planning timeline spans seven days, divided into key milestones and deliverables:
 
 **Day 1:**
