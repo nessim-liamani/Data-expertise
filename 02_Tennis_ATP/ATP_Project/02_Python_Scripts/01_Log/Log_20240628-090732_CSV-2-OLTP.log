@@ -1,0 +1,34 @@
+2024-06-28 09:07:32 - INFO - Starting data insertion: 49 lines to be processed.
+2024-06-28 09:08:06 - ERROR - An error occurred: (pyodbc.DataError) ('22018', '[22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: int is incompatible with date (206) (SQLExecDirectW); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+[SQL: INSERT INTO [#atp_matches_temp] (tourney_id, tourney_name, surface, draw_size, tourney_level, tourney_date, match_num, winner_id, winner_seed, winner_entry, winner_name, winner_hand, winner_ht, winner_ioc, winner_age, winner_rank, winner_rank_points, ... 6504 characters truncated ... , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('1999-670', 'Binghamton CH', 'Hard', 32, 'C', 19990809, 1, 101150, 1.0, None, 'Gianluca Pozzi', 'L', 180.0, 'ITA', 34.1437371663, 81.0, 582.0, 103758, None, None, 'Taylor Dent', 'R', 188.0, 'USA', 18.2915811088, 274, 144, '6-4 6-2', 3, 'R32', None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, '1999-670' ... 1958 parameters truncated ... None, '1999-778', 'Newcastle CH', 'Clay', 32, 'C', 19990719, 11, 102600, None, None, 'David Miketa', 'R', 183.0, 'CZE', 24.1232032854, 318.0, 117.0, 101970, None, None, 'Iztok Bozic', 'R', None, 'SLO', 27.8083504449, 253, 159, '1-6 6-3 6-3', 3, 'R32', None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-06-28 09:08:06 - INFO - Data insertion completed: 49 lines processed.
+2024-06-28 09:08:06 - INFO - 49 lines inserted into atp_matches.
+2024-06-28 09:08:06 - INFO - Number of errors encountered: 1
+2024-06-28 09:08:06 - INFO - Total execution time: 00:00:33
+2024-06-28 09:08:06 - INFO - Starting data insertion: 49 lines to be processed.
+2024-06-28 09:08:15 - ERROR - An error occurred: (pyodbc.DataError) ('22018', '[22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: int is incompatible with date (206) (SQLExecDirectW); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+[SQL: INSERT INTO [#atp_matches_temp] (tourney_id, tourney_name, surface, draw_size, tourney_level, tourney_date, match_num, winner_id, winner_seed, winner_entry, winner_name, winner_hand, winner_ht, winner_ioc, winner_age, winner_rank, winner_rank_points, ... 6504 characters truncated ... , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Hard', 32, 'A', 20170102, 254, 200282, None, 'WC', 'Alex De Minaur', 'R', None, 'AUS', 17.8754277892, 351, 132, 126207, 5.0, None, 'Francis Tiafoe', 'R', None, 'USA', 18.9514031485, 108.0, 550.0, '6-7(4) 6-4 6-4', 3, 'Q2', 139, 5, 6, 105, 67, 48, 23, 16, 3, 5, 13, 2, 110, 65, 43, 25, 16, 6, 10, None, None, 'Hard' ... 1958 parameters truncated ... None, 'Hard', 32, 'A', 20170109, 249, 104907, 7.0, None, 'Jose Rubin Statham', 'R', 183.0, 'NZL', 29.711156742, 434, 94, 144650, None, 'Alt', 'Rhett Purcell', 'R', None, 'GBR', 20.9253935661, 1148.0, 7.0, '7-6(2) 6-0', 3, 'Q1', 81, 4, 0, 59, 41, 33, 10, 9, 1, 1, 3, 4, 62, 28, 16, 18, 9, 5, 8, None, None)]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-06-28 09:08:15 - INFO - Data insertion completed: 49 lines processed.
+2024-06-28 09:08:15 - INFO - 49 lines inserted into atp_matches.
+2024-06-28 09:08:15 - INFO - Number of errors encountered: 1
+2024-06-28 09:08:15 - INFO - Total execution time: 00:00:08
+2024-06-28 09:08:15 - INFO - Starting data insertion: 22 lines to be processed.
+2024-06-28 09:08:15 - ERROR - An error occurred: (pyodbc.IntegrityError) ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert explicit value for identity column in table 'atp_players' when IDENTITY_INSERT is set to OFF. (544) (SQLExecDirectW)")
+[SQL: 
+            MERGE INTO atp_players AS target
+            USING #atp_players_temp AS source
+            ON (target.db_player_id = source.db_player_id)
+            WHEN MATCHED THEN
+                UPDATE SET target.player_id = source.player_id, target.first_name = source.first_name, target.last_name = source.last_name, target.hand = source.hand, target.birth_date = source.birth_date, target.country_code = source.country_code
+            WHEN NOT MATCHED THEN
+                INSERT (db_player_id, player_id, first_name, last_name, hand, birth_date, country_code) VALUES (source.db_player_id, source.player_id, source.first_name, source.last_name, source.hand, source.birth_date, source.country_code);
+            ]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-28 09:08:15 - INFO - Data insertion completed: 22 lines processed.
+2024-06-28 09:08:15 - INFO - 22 lines inserted into atp_players.
+2024-06-28 09:08:15 - INFO - Number of errors encountered: 1
+2024-06-28 09:08:15 - INFO - Total execution time: 00:00:00

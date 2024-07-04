@@ -1,0 +1,44 @@
+2024-06-28 09:09:29 - INFO - Starting data insertion: 49 lines to be processed.
+2024-06-28 09:10:03 - ERROR - An error occurred: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'. (102) (SQLExecDirectW)")
+[SQL: 
+            MERGE INTO atp_matches AS target
+            USING #atp_matches_temp AS source
+            ON ()
+            WHEN MATCHED THEN
+                UPDATE SET target.match_id = source.match_id, target.tourney_id = source.tourney_id, target.tourney_name = source.tourney_name, target.surface = source.surface, target.draw_size = source.draw_size, target.tourney_level = source.tourney_level, target.tourney_date = source.tourney_date, target.match_num = source.match_num, target.winner_id = source.winner_id, target.winner_seed = source.winner_seed, target.winner_entry = source.winner_entry, target.winner_name = source.winner_name, target.winner_hand = source.winner_hand, target.winner_ht = source.winner_ht, target.winner_ioc = source.winner_ioc, target.winner_age = source.winner_age, target.winner_rank = source.winner_rank, target.winner_rank_points = source.winner_rank_points, target.loser_id = source.loser_id, target.loser_seed = source.loser_seed, target.loser_entry = source.loser_entry, target.loser_name = source.loser_name, target.loser_hand = source.loser_hand, target.loser_ht = source.loser_ht, target.loser_ioc = source.loser_ioc, target.loser_age = source.loser_age, target.loser_rank = source.loser_rank, target.loser_rank_points = source.loser_rank_points, target.score = source.score, target.best_of = source.best_of, target.round = source.round, target.minutes = source.minutes, target.w_ace = source.w_ace, target.w_df = source.w_df, target.w_svpt = source.w_svpt, target.w_1stIn = source.w_1stIn, target.w_1stWon = source.w_1stWon, target.w_2ndWon = source.w_2ndWon, target.w_SvGms = source.w_SvGms, target.w_bpSaved = source.w_bpSaved, target.w_bpFaced = source.w_bpFaced, target.l_ace = source.l_ace, target.l_df = source.l_df, target.l_svpt = source.l_svpt, target.l_1stIn = source.l_1stIn, target.l_1stWon = source.l_1stWon, target.l_2ndWon = source.l_2ndWon, target.l_SvGms = source.l_SvGms, target.l_bpSaved = source.l_bpSaved, target.l_bpFaced = source.l_bpFaced
+            WHEN NOT MATCHED THEN
+                INSERT (match_id, tourney_id, tourney_name, surface, draw_size, tourney_level, tourney_date, match_num, winner_id, winner_seed, winner_entry, winner_name, winner_hand, winner_ht, winner_ioc, winner_age, winner_rank, winner_rank_points, loser_id, loser_seed, loser_entry, loser_name, loser_hand, loser_ht, loser_ioc, loser_age, loser_rank, loser_rank_points, score, best_of, round, minutes, w_ace, w_df, w_svpt, w_1stIn, w_1stWon, w_2ndWon, w_SvGms, w_bpSaved, w_bpFaced, l_ace, l_df, l_svpt, l_1stIn, l_1stWon, l_2ndWon, l_SvGms, l_bpSaved, l_bpFaced) VALUES (source.match_id, source.tourney_id, source.tourney_name, source.surface, source.draw_size, source.tourney_level, source.tourney_date, source.match_num, source.winner_id, source.winner_seed, source.winner_entry, source.winner_name, source.winner_hand, source.winner_ht, source.winner_ioc, source.winner_age, source.winner_rank, source.winner_rank_points, source.loser_id, source.loser_seed, source.loser_entry, source.loser_name, source.loser_hand, source.loser_ht, source.loser_ioc, source.loser_age, source.loser_rank, source.loser_rank_points, source.score, source.best_of, source.round, source.minutes, source.w_ace, source.w_df, source.w_svpt, source.w_1stIn, source.w_1stWon, source.w_2ndWon, source.w_SvGms, source.w_bpSaved, source.w_bpFaced, source.l_ace, source.l_df, source.l_svpt, source.l_1stIn, source.l_1stWon, source.l_2ndWon, source.l_SvGms, source.l_bpSaved, source.l_bpFaced);
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-28 09:10:03 - INFO - Data insertion completed: 49 lines processed.
+2024-06-28 09:10:03 - INFO - 49 lines inserted into atp_matches.
+2024-06-28 09:10:03 - INFO - Number of errors encountered: 1
+2024-06-28 09:10:03 - INFO - Total execution time: 00:00:33
+2024-06-28 09:10:03 - INFO - Starting data insertion: 49 lines to be processed.
+2024-06-28 09:10:13 - ERROR - An error occurred: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting the varchar value 'WC' to data type int. (245) (SQLExecDirectW)")
+[SQL: INSERT INTO [#atp_matches_temp] (tourney_id, tourney_name, surface, draw_size, tourney_level, tourney_date, match_num, winner_id, winner_seed, winner_entry, winner_name, winner_hand, winner_ht, winner_ioc, winner_age, winner_rank, winner_rank_points, ... 6504 characters truncated ... , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Hard', 32, 'A', 20170102, 254, datetime.datetime(2002, 8, 2, 0, 0), None, 'WC', 'Alex De Minaur', 'R', None, 'AUS', 17.8754277892, 351, 132, 126207, 5.0, None, 'Francis Tiafoe', 'R', None, 'USA', 18.9514031485, 108.0, 550.0, '6-7(4) 6-4 6-4', 3, 'Q2', 139, 5, 6, 105, 67, 48, 23, 16, 3, 5, 13, 2, 110, 65, 43, 25, 16, 6, 10, None, None, 'Hard' ... 1958 parameters truncated ... None, 'Hard', 32, 'A', 20170109, 249, None, 7.0, None, 'Jose Rubin Statham', 'R', 183.0, 'NZL', 29.711156742, 434, 94, 144650, None, 'Alt', 'Rhett Purcell', 'R', None, 'GBR', 20.9253935661, 1148.0, 7.0, '7-6(2) 6-0', 3, 'Q1', 81, 4, 0, 59, 41, 33, 10, 9, 1, 1, 3, 4, 62, 28, 16, 18, 9, 5, 8, None, None)]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-06-28 09:10:13 - ERROR - An error occurred while dropping the temporary table: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot drop the table '#atp_matches_temp', because it does not exist or you do not have permission. (3701) (SQLExecDirectW)")
+[SQL: DROP TABLE #atp_matches_temp]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-28 09:10:13 - INFO - Data insertion completed: 49 lines processed.
+2024-06-28 09:10:13 - INFO - 49 lines inserted into atp_matches.
+2024-06-28 09:10:13 - INFO - Number of errors encountered: 1
+2024-06-28 09:10:13 - INFO - Total execution time: 00:00:10
+2024-06-28 09:10:13 - INFO - Starting data insertion: 22 lines to be processed.
+2024-06-28 09:10:13 - ERROR - An error occurred: (pyodbc.IntegrityError) ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert explicit value for identity column in table 'atp_players' when IDENTITY_INSERT is set to OFF. (544) (SQLExecDirectW)")
+[SQL: 
+            MERGE INTO atp_players AS target
+            USING #atp_players_temp AS source
+            ON (target.db_player_id = source.db_player_id)
+            WHEN MATCHED THEN
+                UPDATE SET target.player_id = source.player_id, target.first_name = source.first_name, target.last_name = source.last_name, target.hand = source.hand, target.birth_date = source.birth_date, target.country_code = source.country_code
+            WHEN NOT MATCHED THEN
+                INSERT (db_player_id, player_id, first_name, last_name, hand, birth_date, country_code) VALUES (source.db_player_id, source.player_id, source.first_name, source.last_name, source.hand, source.birth_date, source.country_code);
+            ]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-28 09:10:13 - INFO - Data insertion completed: 22 lines processed.
+2024-06-28 09:10:13 - INFO - 22 lines inserted into atp_players.
+2024-06-28 09:10:13 - INFO - Number of errors encountered: 1
+2024-06-28 09:10:13 - INFO - Total execution time: 00:00:00

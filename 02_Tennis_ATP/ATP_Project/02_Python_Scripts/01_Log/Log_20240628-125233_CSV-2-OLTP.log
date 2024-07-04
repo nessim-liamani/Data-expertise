@@ -1,0 +1,89 @@
+2024-06-28 12:52:35 - INFO - Match DataFrame Summary:
+2024-06-28 12:52:41 - INFO - 
+
+[bold magenta]Summary of DataFrame[/bold magenta]
++--------------------+----------------+----------------+---------------+-------------------------------+------------+------------+--------------------+---------------+-------------------------------+
+|       Column       |     Dtype      | Missing Values | Unique Values |         Sample Value          | Min Length | Max Length |        Mean        |    Median     |             Mode              |
++--------------------+----------------+----------------+---------------+-------------------------------+------------+------------+--------------------+---------------+-------------------------------+
+|     tourney_id     |     object     |       0        |     3296      |           2002-487            |     4      |     9      |        <NA>        |     <NA>      |             Hard              |
+|    tourney_name    |     object     |       0        |      675      |          Prague2 CH           |     2      |     29     |        <NA>        |     <NA>      |              32               |
+|      surface       |     object     |       0        |       6       |            Carpet             |     1      |     6      |        <NA>        |     <NA>      |             Clay              |
+|     draw_size      |     Int64      |     16136      |      40       |              32               |     1      |     8      | 1279337.7607835953 |     32.0      |              32               |
+|   tourney_level    |     object     |       0        |      83       |               C               |     1      |     3      |        <NA>        |     <NA>      |               C               |
+|    tourney_date    | datetime64[ns] |       0        |     1777      | 1970-01-01 00:00:00.020021118 |     29     |     29     |        <NA>        |     <NA>      | 1970-01-01 00:00:00.020161107 |
+|     match_num      |     Int64      |      3247      |      193      |              10               |     1      |     3      | 39.15119403549937  |     17.0      |               1               |
+|     winner_id      |     Int64      |      5886      |     2782      |            103104             |     6      |     6      | 104727.76132669597 |   104262.0    |            103105             |
+|    winner_seed     |     Int64      |     64720      |      32       |             <NA>              |     1      |     2      | 4.789163029466971  |      4.0      |               1               |
+|    winner_entry    |     object     |       0        |      18       |              nan              |     1      |     4      |        <NA>        |     <NA>      |              nan              |
+|    winner_name     |     object     |       0        |     2802      |        Bjorn Rehnquist        |     3      |     36     |        <NA>        |     <NA>      |              nan              |
+|    winner_hand     |     object     |       0        |      21       |               R               |     1      |     1      |        <NA>        |     <NA>      |               R               |
+|     winner_ht      |    Float64     |     27304      |     2378      |             175.0             |     4      |     13     | 172.81213806786835 |     183.0     |             183.0             |
+|     winner_ioc     |     object     |       0        |      818      |              SWE              |     3      |     3      |        <NA>        |     <NA>      |              USA              |
+|     winner_age     |    float64     |      113       |     7328      |         24.8678986995         |     3      |     13     | 37.12065540312762  | 25.2128678987 |         25.2128678987         |
+|    winner_rank     |     Int64      |      8404      |     2746      |              163              |     1      |     6      | 7011.297617745064  |     204.0     |              122              |
+| winner_rank_points |     Int64      |     12763      |     1069      |              231              |     1      |     4      | 271.15283438695724 |     228.0     |               5               |
+|      loser_id      |     Int64      |      5886      |     5328      |            102921             |     6      |     6      | 105531.03443858985 |   104368.0    |            103105             |
+|     loser_seed     |     Int64      |     84456      |      33       |             <NA>              |     1      |     2      | 5.243515908998081  |      5.0      |               8               |
+|    loser_entry     |     object     |       0        |      18       |              nan              |     1      |     4      |        <NA>        |     <NA>      |              nan              |
+|     loser_name     |     object     |       0        |     5342      |          Ota Fukarek          |     3      |     37     |        <NA>        |     <NA>      |              nan              |
+|     loser_hand     |     object     |       0        |      23       |               R               |     1      |     1      |        <NA>        |     <NA>      |               R               |
+|      loser_ht      |    Float64     |     40403      |     3586      |             190.0             |     4      |     13     | 170.54365399136356 |     183.0     |             183.0             |
+|     loser_ioc      |     object     |       0        |      975      |              CZE              |     3      |     3      |        <NA>        |     <NA>      |              USA              |
+|     loser_age      |    float64     |      777       |     8138      |         25.8316221766         |     3      |     13     | 33.81032333923637  | 24.7638603696 |              1.0              |
+|     loser_rank     |     Int64      |     16948      |     1926      |              147              |     1      |     4      | 333.69486145383786 |     244.0     |              184              |
+| loser_rank_points  |     Int64      |     11062      |     1036      |              256              |     1      |     4      | 198.23735913442383 |     166.0     |               3               |
+|       score        |     object     |       0        |     5437      |            6-2 6-2            |     1      |     28     |        <NA>        |     <NA>      |            6-4 6-4            |
+|      best_of       |     Int64      |      100       |      197      |               3               |     1      |     3      |  7.69955622525014  |      3.0      |               3               |
+|       round        |     object     |       0        |      39       |              R32              |     1      |     4      |        <NA>        |     <NA>      |              R32              |
+|      minutes       |     Int64      |     59358      |      252      |             <NA>              |     1      |     4      | 82.85946229402391  |     82.0      |               1               |
+|       w_ace        |     Int64      |     56681      |      146      |             <NA>              |     1      |     3      | 12.01201729878679  |      5.0      |               2               |
+|        w_df        |     Int64      |     56681      |      99       |             <NA>              |     1      |     3      | 6.960561062421065  |      2.0      |               1               |
+|       w_svpt       |     Int64      |     56681      |      162      |             <NA>              |     1      |     3      | 64.39469554900685  |     61.0      |              50               |
+|      w_1stIn       |     Int64      |     56681      |      114      |             <NA>              |     1      |     3      | 39.09259826246699  |     38.0      |              33               |
+|      w_1stWon      |     Int64      |     56681      |      82       |             <NA>              |     1      |     3      | 28.97690305790501  |     28.0      |              25               |
+|      w_2ndWon      |     Int64      |     56681      |      46       |             <NA>              |     1      |     2      | 13.242967583910598 |     13.0      |              12               |
+|      w_SvGms       |     Int64      |     56681      |      31       |             <NA>              |     1      |     2      | 10.238068812430633 |     10.0      |               9               |
+|     w_bpSaved      |     Int64      |     56681      |      29       |             <NA>              |     1      |     2      | 3.2618929159171803 |      3.0      |               0               |
+|     w_bpFaced      |     Int64      |     56681      |      28       |             <NA>              |     1      |     2      | 4.644819931876459  |      4.0      |               2               |
+|       l_ace        |     Int64      |     56681      |      145      |             <NA>              |     1      |     3      | 11.109954456733897 |      3.0      |               1               |
+|        l_df        |     Int64      |     56681      |      98       |             <NA>              |     1      |     3      | 7.736652761299705  |      3.0      |               2               |
+|       l_svpt       |     Int64      |     56681      |      171      |             <NA>              |     1      |     3      | 66.38143442152398  |     64.0      |              58               |
+|      l_1stIn       |     Int64      |     56681      |      113      |             <NA>              |     1      |     3      | 39.34513375942439  |     38.0      |              34               |
+|      l_1stWon      |     Int64      |     56681      |      82       |             <NA>              |     1      |     3      |  25.5068888973937  |     24.0      |              21               |
+|      l_2ndWon      |     Int64      |     56681      |      44       |             <NA>              |     1      |     2      | 11.841230050901297 |     11.0      |               9               |
+|      l_SvGms       |     Int64      |     56681      |      31       |             <NA>              |     1      |     2      | 10.485916031995101 |     10.0      |               9               |
+|     l_bpSaved      |     Int64      |     62514      |      25       |             <NA>              |     1      |     2      | 4.446548196015078  |      4.0      |               3               |
+|     l_bpFaced      |     Int64      |     62514      |      30       |             <NA>              |     1      |     2      | 8.311922455573505  |      8.0      |               7               |
++--------------------+----------------+----------------+---------------+-------------------------------+------------+------------+--------------------+---------------+-------------------------------+
+2024-06-28 12:52:42 - INFO - 
+[bold cyan]Additional Information:[/bold cyan]
+Shape: (108939, 49)
+Total Missing Values: 1389487
+Total Size (rows * columns): 5338011
+Memory Usage: 111.57 MB
+2024-06-28 12:52:42 - INFO - Player DataFrame Summary:
+2024-06-28 12:52:42 - INFO - 
+
+[bold magenta]Summary of DataFrame[/bold magenta]
++--------------+----------------+----------------+---------------+---------------------+------------+------------+--------------------+----------+---------------------+
+|    Column    |     Dtype      | Missing Values | Unique Values |    Sample Value     | Min Length | Max Length |        Mean        |  Median  |        Mode         |
++--------------+----------------+----------------+---------------+---------------------+------------+------------+--------------------+----------+---------------------+
+|  player_id   |     Int64      |       0        |     52759     |       137484        |     6      |     6      | 134462.82078887016 | 126395.0 |       100001        |
+|  first_name  |     object     |       0        |     13008     |       Lucien        |     1      |     43     |        <NA>        |   <NA>   |        David        |
+|  last_name   |     object     |       0        |     34024     |        Lemay        |     1      |     34     |        <NA>        |   <NA>   |         Lee         |
+|     hand     |     object     |       0        |       5       |          U          |     1      |     3      |        <NA>        |   <NA>   |          U          |
+|  birth_date  | datetime64[ns] |     10835      |     14766     | 1986-04-11 00:00:00 |     10     |     10     |        <NA>        |   <NA>   | 1995-02-09 00:00:00 |
+| country_code |     object     |       0        |      203      |         FRA         |     3      |     3      |        <NA>        |   <NA>   |         USA         |
++--------------+----------------+----------------+---------------+---------------------+------------+------------+--------------------+----------+---------------------+
+2024-06-28 12:52:42 - INFO - 
+[bold cyan]Additional Information:[/bold cyan]
+Shape: (52759, 6)
+Total Missing Values: 10835
+Total Size (rows * columns): 316554
+Memory Usage: 11.61 MB
+2024-06-28 13:00:11 - ERROR - An error occurred: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'ATP_0_Main.dbo.atp_players', column 'hand'. Truncated value: 'n'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: INSERT INTO atp_players (player_id, first_name, last_name, hand, birth_date, country_code) VALUES (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ... 6726 characters truncated ... , (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?)]
+[parameters: (108740, 'Cyril', 'Jacobe', 'U', datetime.datetime(1983, 3, 31, 0, 0), 'VAN', 108741, 'Mohd', 'Assri Merzuki', 'R', datetime.datetime(1994, 12, 28, 0, 0), 'MAS', 108742, 'Siu Fai Kelvin', 'Lam', 'R', datetime.datetime(1994, 1, 6, 0, 0), 'HKG', 108743, 'Rajeev', 'Rajapakse', 'U', datetime.datetime(1980, 5, 11, 0, 0), 'SRI', 108744, 'Rodrigo', 'Rappaccioli', 'U', datetime.datetime(1990, 9, 26, 0, 0), 'ESA', 108745, 'Gino', 'Meeuwsen', 'R', datetime.datetime(1992, 6, 9, 0, 0), 'AHO', 108746, 'Austen', 'Childs', 'U', datetime.datetime(1989, 2, 23, 0, 0), 'NZL', 108747, 'Dineshkanthan', 'Thangarajah', 'U', datetime.datetime(1991, 1, 5, 0, 0), 'SRI', 108748, 'Lukas' ... 1994 parameters truncated ... datetime.datetime(1979, 1, 27, 0, 0), 'ESP', 109081, 'Nejc', 'Smole', 'U', datetime.datetime(1983, 8, 28, 0, 0), 'SLO', 109082, 'Tobias', 'Huelsen', 'U', datetime.datetime(1982, 8, 30, 0, 0), 'GER', 109083, 'Ilja', 'Kovalev', 'L', datetime.datetime(1991, 9, 23, 0, 0), 'RUS', 109084, 'Tommaso', 'Metti', 'U', datetime.datetime(1993, 1, 25, 0, 0), 'ITA', 109085, 'Nicolai', 'Horgen', 'U', datetime.datetime(1986, 5, 9, 0, 0), 'NOR', 109086, 'Ernest', 'Erkeev', 'R', datetime.datetime(1987, 1, 30, 0, 0), 'RUS', 109087, 'Dmitri', 'Lomakin', 'U', datetime.datetime(1984, 4, 6, 0, 0), 'RUS', 109088, 'Dmitri', 'Dudko', 'R', datetime.datetime(1982, 1, 19, 0, 0), 'RUS')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-28 13:00:11 - INFO - Number of errors encountered: 1
+2024-06-28 13:00:11 - INFO - Total execution time: 00:07:38

@@ -1,0 +1,148 @@
+### Project Plan for "Projet Police"
+
+#### 1. **Understanding the Problem**
+   - **Theme**: Analyzing police shootings in the U.S. to identify potential discrimination and patterns.
+   - **Context**: There is a significant concern about police shootings, especially involving ethnic minorities.
+   - **Objective**: Create a comprehensive data solution to analyze and report on police shootings, addressing key questions on ethnic discrimination, regional differences, temporal trends, and police misconduct.
+
+#### 2. **Data Sources**
+   - **Primary Data**: 
+     - `fatal-police-shootings.csv`: Details on police shootings.
+     - `Ethnicity Data USA.xlsx`: Ethnic distribution in the U.S.
+     - `uscities.csv`: Information about U.S. cities.
+     - `fatal-police-shootings-agencies.xlsx`: Agencies involved in shootings.
+   - **Additional Data**: Other relevant datasets as needed for further analysis.
+
+#### 3. **Administrative Objectives**
+   - **Business and Functional Analysis**
+     - Model the use case diagram for understanding interactions.
+     - Design the database schema for OLTP and OLAP systems.
+   - **Project Management**
+     - **Deliverables and Tasks**: Identify tasks, assign responsibilities, and estimate time required.
+     - **Critical Path**: Determine the sequence of essential tasks.
+     - **Resource Allocation**: Assign team members to tasks.
+     - **Risk Management**: Identify and plan for potential risks.
+
+#### 4. **Technical Objectives**
+   - **Database Construction**
+     - **OLTP**: Build `Police_0_Main` for initial data storage.
+     - **Data Cleaning**: Clean and preprocess data using Python and T/SQL.
+     - **OLAP**: Build `Police_1_DWH` using a star schema for analytical queries.
+   - **ETL Process**
+     - Develop ETL scripts using Python, T/SQL, and Powershell.
+     - Schedule regular ETL tasks using Windows Task Scheduler.
+   - **Visualization and Reporting**
+     - Utilize Power BI to create interactive reports and dashboards.
+
+#### 5. **Key Questions to Address**
+	### 1. **Global Situation**: Analyze overall trends in police shootings.
+		1. **What is the annual number of fatal police shootings in the United States from 2015 to 2022?**
+		   - This question aims to identify the yearly trend and check if the number of incidents is increasing or decreasing over the years.
+
+		2. **What are the most common circumstances (e.g., manner of death, armed status) under which police shootings occur?**
+		   - This helps in understanding the typical scenarios of these incidents, such as whether the victims were armed and the common manners of death (e.g., shot, Tasered).
+
+		3. **What is the demographic profile (age, gender, race) of individuals involved in police shootings?**
+		   - This question seeks to paint a comprehensive picture of the victims, highlighting any prevalent patterns in demographics.
+
+	### 2. **Ethnic Discrimination**: Determine if certain ethnic groups are disproportionately affected.
+		1. **What is the rate of fatal police shootings per 100,000 people for each ethnic group?**
+		   - By normalizing the data with population size, we can assess if certain ethnic groups face a higher risk of being involved in police shootings.
+
+		2. **How do the characteristics of police shootings (e.g., armed status, threat level) differ between ethnic groups?**
+		   - This question examines whether there are differences in the nature of incidents involving different ethnicities, such as whether certain groups are more likely to be unarmed or perceived as a threat.
+
+		3. **What proportion of the total police shootings does each ethnic group represent, and how does this compare to their proportion of the total population?**
+		   - This comparison helps to identify any disproportionate representation in police shootings relative to their population size.
+
+	### 3. **Regional Differences**: Compare shootings across different U.S. regions.
+		1. **Which states or regions have the highest and lowest rates of fatal police shootings?**
+		   - This identifies geographic hotspots and safer areas, facilitating a regional comparison.
+
+		2. **Comparison of police shootings by state, focusing on the number of shootings involving unarmed individuals**
+		   - This query provides a comparison of police shootings by state, focusing on the total number of shootings and how many of them involved unarmed individuals.
+
+		3. **What are the characteristics of police shootings (e.g., armed status, threat level) in different regions of the United States?**
+		   - This question explores regional variations in the nature of police shootings, such as whether certain areas have higher incidents involving unarmed individuals.
+
+	### 4. **Temporal Evolution**: Identify trends over time.
+		1. **How has the number of fatal police shootings changed annually from 2015 to 2022?**
+		   - This provides a year-by-year trend analysis to see if incidents are increasing or decreasing.
+
+		2. **What are the trends in police shootings for different ethnic groups over time?**
+		   - This looks at whether the risk for specific ethnic groups has changed over the years.
+
+		3. **Are there seasonal or monthly patterns in the occurrence of fatal police shootings?**
+		   - This helps to identify if there are specific times of the year when incidents are more frequent.
+
+	### 5. **Police Misconduct**: Assess the extent of police misconduct.
+		1. **What percentage of fatal police shootings involve victims who were unarmed at the time of the incident?**
+		   - This metric is crucial for assessing potential cases of misconduct where lethal force might not have been justified.
+
+		2. **How many incidents involve officers who had their body cameras turned off or malfunctioning during the shooting?**
+		   - This question focuses on accountability and transparency issues within the police force.
+
+		3. **What is the frequency of fatal police shootings involving signs of mental illness, and how are these incidents handled compared to others?**
+		   - This examines if there is a different protocol or outcome for incidents involving individuals with mental health issues, indicating potential areas for policy improvement.
+
+	These questions provide a structured approach to analyzing the data, ensuring that each aspect of the problem is thoroughly investigated.
+
+#### 6. **Detailed Plan and Steps**
+
+	##### **1. Analysis and Design**
+		- **Use Case Diagram**: Define interactions between the system and users (DOJ analysts, data engineers).
+		- **Database Schema**: 
+		  - Design schemas for `Police_0_Main` and `Police_1_DWH`.
+
+	##### **2. Data Preparation**
+		- **Data Import and Cleaning**:
+		  - Write Python scripts to load and clean data from CSV/Excel files.
+		  - Use T/SQL scripts for further cleaning and integrity checks.
+		- **Example Python Script (ETL_00_from_files_to_DB.py)**:
+		  ```python
+
+		  ```
+
+	##### **3. Data Warehouse Setup**
+		- **Schema Design**: Define fact and dimension tables for star schema.
+		- **DDL Scripts**:
+		  ```sql
+
+		  ```
+
+	##### **4. ETL Development**
+		- **Python Script for ETL Process (ETL_01_from_DB_to_DWH.py)**:
+		  ```python
+
+		  ```
+
+	##### **5. Visualization with Power BI**
+		- **Connect Power BI to `Police_1_DWH`**.
+		- **Create Reports and Dashboards**:
+		  - **Global Trends**: Line chart showing trends over years.
+		  - **Ethnic Discrimination**: Bar chart comparing shooting rates by ethnicity.
+		  - **Regional Analysis**: Map visualization showing shootings by state.
+		  - **Temporal Trends**: Line chart showing shootings over time.
+		  - **Police Misconduct**: KPI indicators for signs of police misconduct.
+
+	##### **6. Documentation and Reporting**
+		- **Project Report**:
+		  - Methodology
+		  - Data sources and preparation
+		  - Analysis and findings
+		  - Visualizations and insights
+		- **Backup of Data Warehouse**: Provide a full backup of the `Police_1_DWH` database.
+		- **Source Code**: All scripts used for ETL and database management.
+
+By following this structured plan, the project will systematically address the key objectives and deliver comprehensive insights into the police shootings across the United States.
+
+
+===============================================================================================================================
+
+
+
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================

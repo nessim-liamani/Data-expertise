@@ -1,0 +1,354 @@
+Breaking down the "ATP Project" step-by-step and provide the necessary scripts and guidance to achieve each part. 
+This project involves setting up databases, cleaning data, performing ETL processes, and creating visualizations. 
+Below are the details and the corresponding scripts for each step:
+
+### 0. Project Management
+Manage the project using ProjectLibre by breaking down the tasks, estimating time, and tracking progress.
+
+**Tasks Example**:
+- Data Acquisition: 0.5 day(s)
+- Database Setup: 0.2 day(s)
+- Data Loading: 1 day(s)
+- Data Warehouse Creation: 1 day(s)
+- Data Analysis and Visualization: 1 day(s)
+
+**Risk Management**:
+- Data inconsistencies: Regular data validation checks
+- Script errors: Version control and testing scripts
+
+### 1. Setup Environment
+Ensure you have SQL Server 2022, Python (with pandas and numpy), and PowerShell installed on your system.
+
+### 2. Data Preparation and ETL Process
+
+#### 2.1 Download and Organize Data
+Download the provided CSV files for ATP matches and players, and place them in a designated directory.
+
+#### 2.2 Create Main Database and Tables
+
+**SQL Script to create the main database and tables (ATP_0_Main)**:
+```sql
+
+```
+
+#### 2.3 Load Data into Main Database
+
+**Python Script to load CSV data into SQL Server using pandas**:
+```python
+
+```
+
+**PowerShell Script to execute Python script**:
+```powershell
+# Save this script as 'run_etl.ps1'
+python path_to_python_script/load_data.py
+```
+
+**Execute PowerShell Script**:
+```powershell
+# Open PowerShell and run the following command
+./run_etl.ps1
+```
+
+#### 2.4 Create Data Warehouse and Populate Data
+
+**SQL Script to create Data Warehouse and tables (ATP_1_DWH)**:
+```sql
+
+```
+
+**Python Script to populate Data Warehouse from Main Database**:
+```python
+
+```
+
+**PowerShell Script to execute Python script for Data Warehouse**:
+```powershell
+# Save this script as 'populate_dwh.ps1'
+python path_to_python_script/populate_dwh.py
+```
+
+**Execute PowerShell Script**:
+```powershell
+# Open PowerShell and run the following command
+./populate_dwh.ps1
+```
+
+### 3. Data Analysis and Visualization
+
+#### 3.1 Data Cleaning and Transformation
+Perform any necessary data cleaning and transformation using SQL or Python as needed.
+
+#### 3.2 Load Data into Power BI
+Connect Power BI to the ATP_1_DWH database and create reports based on business requirements.
+
+**Example Business Questions**:
+- Who won the most matches between 2010 and 2017?
+- What is the average duration of a best of 3-set match?
+- Who has hit the most aces in 2010, in 2011, etc.?
+
+#### 3.3 Power BI Visualizations
+Create visualizations in Power BI to answer the business questions. Example visuals could include bar charts, line graphs, and tables.
+
+### 4. Conclusion
+Following the steps above will help you achieve the objectives of the ATP Project by leveraging SQL Server, Python, PowerShell, and Power BI for comprehensive data analysis and visualization.
+
+
+===============================================================================================
+
+**Summary: How Data Analytics Is Changing Tennis For The Better**
+
+- **Introduction**
+  - Professional tennis now utilizes real-time performance data accessible via iPads during live matches.
+  - SAP Tennis Analytics for coaches, powered by SAP HANA, debuted at the Bank of the West Classic at Stanford University.
+
+- **Insights from Lindsay Davenport**
+  - Davenport, former World No. 1 and current coach/commentator, emphasizes the revolutionary impact of having data readily available.
+  - She compares tennis analytics to other sports, noting how it can significantly aid coaches and players in strategizing.
+  - Davenport has experienced analytics as a player, commentator, and coach, finding it beneficial at all levels.
+  - She believes this technology will elevate the overall level of tennis by helping players understand opponents' weaknesses and patterns.
+
+- **Insights from Angelique Kerber**
+  - Current World No. 11, Kerber, finds the partnership with SAP advantageous for match preparation.
+  - Her coach uses the data to analyze opponents and develop strategies, which are then discussed the night before matches.
+  - Kerber appreciates the ease of access to information during matches, aiding her in real-time adjustments and decision-making.
+
+- **Preparation and Strategy**
+  - Both Davenport and Kerber highlight the significance of pre-match preparation using data analytics.
+  - Davenport discusses the detailed planning involved in coaching, including pre-programming tablets with relevant data.
+  - She coaches Madison Keys, focusing on optimizing her game by analyzing serve patterns and opponents' strengths and weaknesses.
+
+- **On-Court Application**
+  - Kerber mentions using on-court coaching to get real-time feedback and make necessary adjustments.
+  - Davenport notes that while players like Keys may not focus on stats during a match, coaches use the data to guide them effectively.
+  - Both emphasize the importance of understanding and integrating analytics into their overall training and match strategy.
+
+- **Conclusion**
+  - The integration of SAP's technology is seen as a significant advancement in tennis coaching and playing.
+  - The technology aims to improve player performance by providing detailed insights and enabling strategic adjustments during matches.
+
+**Table: Key Points**
+
+| Aspect                        | Lindsay Davenport's Insights                                                                                       | Angelique Kerber's Insights                                                                                      |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Role and Experience**       | Former World No. 1, current coach/commentator, and experienced in analytics                                        | Current World No. 11, utilizes analytics for match preparation and in-game adjustments                            |
+| **Impact of Analytics**       | Compares to other sports, believes it will elevate tennis                                                          | Sees it as a perfect partnership, makes preparation easier                                                        |
+| **Match Preparation**         | Detailed planning with pre-programmed tablets, focuses on first few shots                                          | Coach analyzes opponents, discusses strategies the night before                                                   |
+| **On-Court Coaching**         | Uses real-time data to guide players like Madison Keys                                                             | Calls coach for real-time feedback, adjusts strategy during matches                                               |
+| **Technology Usage**          | Excited about visual proof of match data, believes it will improve player-coach relationship                       | Appreciates ease of access to information, helps in making strategic adjustments                                  |
+| **Overall Benefit**           | Enhances strategic planning and performance                                                                        | Improves preparation, understanding of opponents, and in-game decision-making                                      |
+
+===============================================================================================
+
+**Summary: WTA Ranking: Big Data Will Guide Tennis Players to the No. 1 Spot**
+
+- **Importance of Big Data in Tennis**
+  - Big Data technology can answer critical questions about performance improvement in women's tennis.
+  - Proper application of data analytics can influence game outcomes, training plans, and real-time tactics.
+
+- **Predictive Models and Strategy**
+  - Predictive models help prioritize aspects of the game based on the playing surface and upcoming opponents.
+  - Improving specific metrics, such as first serves or cross-court backhands, can lead to better rankings.
+
+- **Statistical Insights**
+  - Analysis of WTA top 20 rankings (as of October 26th, 2015) shows significant correlations between WTA rankings and certain performance metrics.
+  - Second-serve percentage won and break points saved are highly correlated with top rankings.
+  - Players like Serena Williams and Maria Sharapova excel in multiple performance metrics, correlating with their high rankings.
+
+- **Application in Coaching**
+  - Coaches in the WTA can speak to players between games, making real-time data analysis valuable for immediate strategic adjustments.
+  - Future advancements may allow for real-time communication between coaches and players via headsets.
+
+- **Comparison to Team Sports**
+  - Data analytics is extensively used in team sports in the US, improving tactics and training plans.
+  - Example: Houston Rockets' success by focusing on high-value shots based on data analytics, leading to a new 3-pointer record.
+
+**Table: Key Points**
+
+| Aspect                          | Details                                                                                                                                  |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| **Role of Big Data**            | Influences game outcomes, training plans, and real-time tactics.                                                                         |
+| **Predictive Models**           | Help prioritize game aspects based on surface and opponents.                                                                             |
+| **Performance Metrics**         | Strong correlation between WTA rankings and second-serve percentage won, break points saved.                                             |
+| **Top Performers**              | Serena Williams and Maria Sharapova excel in multiple metrics.                                                                           |
+| **Coaching Application**        | Real-time data aids in strategic adjustments; future potential for headset communication.                                                |
+| **Comparison to Team Sports**   | Data analytics improves tactics in team sports; example: Houston Rockets' strategic focus on high-value shots based on data analysis.     |
+
+**Statistical Correlation with WTA Rankings (Top 20)**
+
+| Metric                       | Correlation with WTA Top 20       |
+|------------------------------|-----------------------------------|
+| Second-serve percentage won  | High                              |
+| Break points saved           | High                              |
+| First serves                 | Moderate                          |
+| Points won with first serve  | Moderate                          |
+| Points won with second serve | Moderate                          |
+
+**Key Insights from Big Data Analysis**
+
+- Focus on improving second serves and saving break points provides a competitive advantage.
+- Comprehensive data analysis over multiple years can inform better strategies against specific rivals.
+- Coaches can utilize real-time data to provide actionable advice during matches, enhancing players' chances of success.
+
+===============================================================================================
+
+### Step-by-Step Guide to Create Visuals in Power BI to Answer the Questions
+
+**1. Open Power BI Desktop and Load Data:**
+   - Ensure your data is already loaded in Power BI, as shown in the image.
+
+### 1. Who won the most matches between 2010 and 2017?
+**Steps:**
+1. Click on the `Table` visualization.
+2. Drag `first_name` and `last_name` from `dim_atp_players` to `Values`.
+3. Drag `winner_id` from `Fact_ATP_Matches` to `Values`, and set it to `Count`.
+4. Drag `full_date` from `dim_date` to `Filters`.
+5. Set the filter to show data between 2010 and 2017.
+6. Sort the table by the count of `winner_id` in descending order.
+
+### 2. What is the average duration of a best of 3-set match?
+**Steps:**
+1. Click on the `Card` visualization.
+2. Drag `minutes` from `Fact_ATP_Matches` to `Values`.
+3. Drag `best_of` from `Fact_ATP_Matches` to `Filters`.
+4. Set the filter to `3`.
+5. Change the aggregation of `minutes` to `Average`.
+
+### 3. Who has hit the most aces in 2010, in 2011, etc.?
+**Steps:**
+1. Click on the `Clustered Column Chart` visualization.
+2. Drag `year` from `dim_date` to `Axis`.
+3. Drag `first_name` and `last_name` from `dim_atp_players` to `Legend`.
+4. Drag `w_ace` from `Fact_ATP_Matches` to `Values`, and set it to `Sum`.
+5. Sort the chart by `w_ace` in descending order.
+
+### 4. When is any player more likely to beat Roger Federer? On which surface?
+**Steps:**
+1. Click on the `Table` visualization.
+2. Drag `surface` from `Fact_ATP_Matches` to `Values`.
+3. Drag `match_id` from `Fact_ATP_Matches` to `Values`, and set it to `Count`.
+4. Drag `full_date` from `dim_date` to `Filters`.
+5. Set the filter to show matches where `loser_name` is 'Roger Federer'.
+6. Sort the table by the count of `match_id` in descending order.
+
+### 5. Who has won the most matches on grass/clay/hard court?
+**Steps:**
+1. Click on the `Clustered Column Chart` visualization.
+2. Drag `surface` from `Fact_ATP_Matches` to `Axis`.
+3. Drag `first_name` and `last_name` from `dim_atp_players` to `Legend`.
+4. Drag `winner_id` from `Fact_ATP_Matches` to `Values`, and set it to `Count`.
+5. Sort the chart by `winner_id` in descending order for each surface type.
+
+### 6. Who has won the most Davis Cup/Fed Cup matches?
+**Steps:**
+1. Click on the `Table` visualization.
+2. Drag `first_name` and `last_name` from `dim_atp_players` to `Values`.
+3. Drag `match_id` from `Fact_ATP_Matches` to `Values`, and set it to `Count`.
+4. Drag `tourney_level` from `Fact_ATP_Matches` to `Filters`.
+5. Set the filter to `D` and `F`.
+6. Sort the table by the count of `match_id` in descending order.
+
+### 7. How many matches has a player won after losing the first two sets?
+**Steps:**
+1. Click on the `Table` visualization.
+2. Drag `first_name` and `last_name` from `dim_atp_players` to `Values`.
+3. Drag `match_id` from `Fact_ATP_Matches` to `Values`, and set it to `Count`.
+4. Drag `score` from `Fact_ATP_Matches` to `Filters`.
+5. Set the filter to matches where `score` starts with `'0-6 0-6'` or similar pattern.
+6. Sort the table by the count of `match_id` in descending order.
+
+### 8. How unlikely was Martin Klizan’s Australian Open victory? And Denis Kudla’s US Open victory?
+**Martin Klizan’s Australian Open Victory (2014)**
+**Steps:**
+1. Click on the `Card` visualization.
+2. Drag `match_id` from `Fact_ATP_Matches` to `Values`, and set it to `Count`.
+3. Drag `full_date` from `dim_date` to `Filters`.
+4. Set the filter to the year 2014.
+5. Drag `first_name` and `last_name` from `dim_atp_players` to `Filters`.
+6. Set the filter to `Stan Wawrinka`.
+7. Drag `tourney_name` from `Fact_ATP_Matches` to `Filters`.
+8. Set the filter to `Australian Open`.
+
+**Denis Kudla’s US Open Victory (2014)**
+**Steps:**
+1. Repeat the steps as above, changing the filters to `Denis Kudla` and `US Open`.
+
+### 9. Is there a correlation between the number of aces and the winner of the match?
+**Steps:**
+1. Click on the `Scatter Chart` visualization.
+2. Drag `w_ace` from `Fact_ATP_Matches` to `X-Axis`.
+3. Drag `winner_id` from `Fact_ATP_Matches` to `Y-Axis`, and set it to `Count`.
+4. Drag `first_name` and `last_name` from `dim_atp_players` to `Legend`.
+5. Analyze the scatter plot to see if there's a visible correlation.
+
+By following these steps, you should be able to create the necessary visuals in Power BI to answer each of the questions using your data warehouse.
+
+===============================================================================================
+
+To properly link the tables in Power BI, you need to establish relationships between the fact table and the dimension tables. Here’s how to do it:
+
+### Step-by-Step Guide to Link Tables in Power BI
+
+1. **Open the Model View**:
+   - Click on the "Model" icon on the left sidebar to switch to the model view where you can see all your tables.
+
+2. **Create Relationships**:
+   - **Fact_ATP_Matches and dim_atp_players**:
+     - Drag `winner_id` from `Fact_ATP_Matches` and drop it on `player_id` in `dim_atp_players`.
+     - A relationship will be created. Ensure the relationship is many-to-one (Fact_ATP_Matches to dim_atp_players).
+   - **Fact_ATP_Matches and dim_date**:
+     - Drag `tourney_date` from `Fact_ATP_Matches` and drop it on `full_date` in `dim_date`.
+     - A relationship will be created. Ensure the relationship is many-to-one (Fact_ATP_Matches to dim_date).
+
+3. **Verify Relationships**:
+   - Ensure that the relationships are correctly established by checking the lines connecting the tables. They should show the correct cardinality (many-to-one).
+
+### Example Relationships
+Here are the relationships you should create:
+- **Fact_ATP_Matches (winner_id)** to **dim_atp_players (player_id)**
+- **Fact_ATP_Matches (loser_id)** to **dim_atp_players (player_id)**
+- **Fact_ATP_Matches (tourney_date)** to **dim_date (full_date)**
+
+### Visual Representation
+Based on the image you provided, your relationships should look like this:
+
+```plaintext
+dim_atp_players
+  |
+  |-- player_id
+  |
+Fact_ATP_Matches
+  |-- winner_id
+  |-- loser_id
+  |
+dim_date
+  |-- full_date
+```
+
+### Detailed Steps in Power BI
+
+1. **Fact_ATP_Matches to dim_atp_players**:
+   - In the model view, drag the `winner_id` from `Fact_ATP_Matches` and drop it on `player_id` in `dim_atp_players`.
+   - Do the same for `loser_id` from `Fact_ATP_Matches` to `player_id` in `dim_atp_players`.
+
+2. **Fact_ATP_Matches to dim_date**:
+   - In the model view, drag the `tourney_date` from `Fact_ATP_Matches` and drop it on `full_date` in `dim_date`.
+
+### Final Relationships Setup
+After creating these relationships, your Power BI model should reflect the following:
+
+- `Fact_ATP_Matches` table will have two relationships with `dim_atp_players`:
+  - `winner_id` to `player_id`
+  - `loser_id` to `player_id`
+- `Fact_ATP_Matches` table will have one relationship with `dim_date`:
+  - `tourney_date` to `full_date`
+
+These relationships will allow you to create comprehensive visualizations and answer all the questions you have about the ATP matches and players.
+
+### Visual Guide
+Refer to the uploaded image to ensure your model matches the described setup. Here’s how the connections should look visually:
+
+![Power BI Relationships](file-ysdjD9Sf4LBjGFVXwluMOg6L)
+
+By following these steps, you'll ensure that your tables are properly linked in Power BI, allowing you to create the necessary reports and visualizations to answer the provided questions.
+

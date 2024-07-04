@@ -1,0 +1,381 @@
+I've payed an expensive OpenAI/ChatGPT4o subscription to help me work and I'm asking you to reply without any lazyness by following thouroughly my instructions. I'm counting on you to give me all the things I need.
+
+01. Help me accomplish this "ATP project" using the tools I know of and I could use : 
+	01. 'SQL Server 2022' with 'T/SQL' requests, as much as possible (no need to go into details for your answers, just give me the complete commented scripts and where/when to execute those).
+	02. Powershell into Windows to execute your sql scripts in the terminal ('sqlcmd') 
+	03. Planning with Task Scheduling.
+	04. Python with Pandas/NumPy...
+	05. Excel/PowerBI 
+	...
+	Make sure to treat/clean the data as much as possible next to the source, ideally in 'T/SQL' / 'Python'.
+
+02. The Data chain or ETL should be as follow (chronological) : 
+	-> From CSV Source // atp_matches_qual_chall_xxxx.csv + atp_players.csv + other infos you deem useful to fullfill my requirements
+	-> Python script(s) and/or 'T/SQL' script(s) with 'sqlcmd' // From CSV to 'SQL Database'
+	-> Powershell script(s) // to execute the previous 'python' and/or 'T/SQL' files to populate the main DB (see next point)
+	-> Creation of the main OLTP Database within SQL Server 2022 // 
+	-> Python script(s) and/or 'T/SQL' script(s) with 'sqlcmd' // From main DB to DWH DB.
+	-> Powershell script(s) // to execute the previous 'python' and/or 'T/SQL' files to populate the main DB (see next point)
+	-> Optionnal if you deem it useful : SQL Server 2022 DWH populate (you have to propose a dimensional model if applicable) // 
+	-> Power BI for Visualisation // according to business needs you'll find Bellow.
+
+03. Masterdata for the hole project : 
+	Project name : "ATP Project"
+	Main DB name : 'ATP_0_Main'
+	DWH DB name : 'ATP_1_DWH'
+========================================================================================================================================================
+
+Business Requierements : 
+	
+	01. Objectives of the project
+		Apply the various concepts one single case study : "ATP Project"
+			● Business Analysis & Functional Analysis
+			● Business Intelligence
+			● Project Management
+			
+========================================================================================================================================================
+
+	02. Business Analysis and Functional Analysis
+		02.01. Case Study
+			The ATP and the WTA want an app that will enable them to store information about their “business”; more specifically:
+				● Create, read, update, delete players’ profile and their coaches’
+				● Create, read, update, delete tournaments; a tournament is characterized by
+				various information including (but not limited to): the dates, the level, the type
+				of court, the draws, the organizers, the tournament director, the referees, the
+				umpires, the linesman, the ball boys, the prize money, the sponsors, …
+				● (+) Manage the anti-doping testings (https://www.itftennis.com/antidoping/rules/tadp-overview.aspx)
+				● (+) Manage the rankings
+				● (+) Manage the broadcasting rights
+
+		02.02. Your Tasks
+			Business Analysis:
+				● Understand (if not known yet) the rules of the game
+				● Model the process of tournament organization
+				● (+) Model the process of anti-doping testing
+			Functional Analysis:
+				● Model the Use Case Diagram
+				● Model the DB Schema
+				● (+) Model the State Chart for the player
+========================================================================================================================================================
+
+	03. Business Intelligence
+		03.01. Case Study
+			The ATP and the WTA want to be able to collect and store data in such a way that they will be able to:
+				● Increase traffic
+					○ Improve fan experience and engagement
+					http://www.ibmbigdatahub.com/blog/wimbledon-using-real-time-sports-statistics-fan-engagem
+					ent
+					○ ATP Stats Leaderboards for web viewers
+				● Propose Data-based strategies for players and coaches:
+					○ Self-service descriptive statistics and correlations for players and coaches
+				● Reframe the sport by promoting factual analysis over intuition
+					○ Descriptive stats and causal relationships for journalists and commentators
+			https://www.infosys.com/stories/immersed-game/Documents/tennis-experience-digital-age.pdf
+
+		03.02. Case Study
+			Here are some articles explaining/showing how data can be used in tennis:
+				● http://www.ibmbigdatahub.com/blog/wimbledon-using-real-time-sports-statistics-fan-engagement
+				● https://nest.latrobe/how-tennis-joined-the-data-revolution/
+				● https://www.silicon.co.uk/data-storage/how-data-analytics-changing-tennis-175134?inf_by=5af992a
+				8671db8190d8b4771
+				● https://www.bbva.com/en/wta-ranking-big-data-will-guide-tennis-players-to-the-no-1-spot/
+				● https://www.infosys.com/stories/immersed-game/Documents/tennis-experience-digital-age.pdf
+			
+		03.03. Case Study
+			More specifically, both organizations want to be able to answer several questions, including (but not limited to):
+				● Who won the most matches between 2010 and 2017?
+				● What is the average duration of a best of 3-set match?
+				● Who has hit the most aces in 2010, in 2011, etc.?
+				● When is any player more likely to beat Roger Federer? On which surface?
+				● Who has won the most matches on grass/clay/hard court?
+				● Who has won the most Davis Cup/Fed Cup matches?
+				● ...
+
+		03.04. Case Study
+			More specifically, both organizations want to be able to answer several questions, including (but not limited to):
+				● (+) How many matches has a player won after losing the 2 first sets?
+				● (+) How unlikely was Stan Wawrinka’s Australian Open victory? And Marin
+				Cilic’s US Open victory?
+				http://www.ibmbigdatahub.com/blog/how-unlikely-was-wawrinkas-australian-open-victory
+				● (+) Is there a correlation between the number of aces and the winner of the
+				match?
+				● ...
+========================================================================================================================================================
+
+	04. Project Management
+		04.01. Project Management Activities
+			Manage your project as you would any other project:
+				● Identify your tasks
+				● Estimate them
+				● Identify the critical path
+				● Analyse your resources
+				● Assign them to your tasks
+				● Manage the risks
+				● …
+			
+			Use 'OpenProj' or 'ProjectLibre' by providing an filled file to import to either tool.
+			
+		04.02. Your Tasks: Planning
+			The attached image depicts a project planning timeline titled "Your Tasks: Planning." This timeline is divided into key milestones and deliverables over the span of seven days. Below is a detailed textual description of the planning:
+
+			### Case Study Introduction:
+			**Day 1**:
+			- The project starts with an introduction to the case study.
+			- The introduction includes:
+			  - Expected deliverables
+			  - Practical details
+
+			### First Milestone:
+			**End of Day 2**:
+			- Deliverables expected by the end of this day include:
+			  - Planning documentation
+			  - Business analysis
+
+			### Second Milestone:
+			**End of Day 4**:
+			- Deliverables expected by the end of this day include:
+			  - Functional analysis
+			  - Multi-dimensional model
+
+			### Third Milestone:
+			**End of Day 6**:
+			- Deliverables expected by the end of this day include:
+			  - 80% of dimension tables loaded
+
+			### Final Day:
+			**Day 7**:
+			- This is the final day of the planning timeline, presumably for final review and completion of any outstanding tasks.
+
+			### Visual Representation:
+			- The timeline is depicted as a horizontal bar divided into sections by days, with key milestones marked by black dots.
+			- The timeline is color-coded:
+			  - **Day 1 to Day 3** is marked in purple.
+			  - **Day 4 to Day 7** is marked in yellow.
+
+			Each milestone provides specific deliverables that are crucial for the project's progression, ensuring structured and timely completion of tasks.
+========================================================================================================================================================
+
+Appendices : 
+	
+	Appendix 00 - GitHub Sources organization : 
+		00_SourceData
+			atp_matches_qual_chall_2007.csv 
+			atp_matches_qual_chall_1999.csv 
+			atp_matches_qual_chall_2001.csv 
+			atp_matches_qual_chall_2000.csv 
+			atp_matches_qual_chall_2002.csv 
+			atp_matches_qual_chall_2008.csv 
+			atp_matches_qual_chall_2003.csv 
+			atp_matches_qual_chall_2005.csv 
+			atp_matches_qual_chall_2004.csv 
+			atp_matches_qual_chall_2006.csv 
+			atp_matches_qual_chall_2009.csv 
+			atp_matches_qual_chall_2010.csv 
+			atp_matches_qual_chall_2011.csv 
+			atp_matches_qual_chall_2012.csv 
+			atp_matches_qual_chall_2013.csv 
+			atp_matches_qual_chall_2014.csv 
+			atp_matches_qual_chall_2015.csv 
+			atp_matches_qual_chall_2016.csv 
+			atp_matches_qual_chall_2017.csv 
+			atp_players.csv                 	
+		01_SQL_Scripts
+			00_ATP_Main_DDL.sql
+			01_ATP_DWH_DDL.sql 
+			02_ATP_DWH_DQL.sql 
+		02_Python_Scripts
+			ETL_01_from_DB_to_DWH.py
+			ETL_00_from_CVS_to_DB.py
+		03_Powershell_Scipts
+			populate_dwh.ps1
+		Log
+			20240701_213722_DWH_ATP_Log.log
+			20240701_213932_DWH_ATP_Log.log
+			...
+		
+	Appendix 01 - "00_SourceData" notes : 
+
+		## ATP Tennis Rankings, Results, and Stats
+
+		For now, this contains my master ATP player file, plus historical rankings.
+
+		The player file columns are player_id, first_name, last_name, hand, birth_date, country_code.
+
+		The columns for the ranking files are ranking_date, ranking, player_id, ranking_points.
+
+		ATP rankings are mostly complete from 1983 to the end of 2014. 1982 is missing, and rankings from 1973-1981 are only intermittent.
+
+
+		---
+
+		Update, 24/3/15
+
+		My ATP match result database is now here, as well. There are up to three files per season: One for tour-level main draw matches (e.g. 'atp_matches_2014.csv'), one for tour-level qualifying and challenger main-draw matches, and one for futures matches.
+
+		To make them easier to use, I've included a fair bit of redundancy with the biographical and ranking files: each row contains several columns of biographical information, along with ranking and ranking points, for both players. Ranking data, as well as age, are as of tourney_date, which is almost always the Monday at or near the beginning of the event.
+
+		MatchStats are included where I have them. In general, that means 1991-present for tour-level matches, 2008-present for challengers, and 2011-present for tour-level qualifying. The MatchStats columns should be self-explanatory, but they might not be what you're used to seeing; it's all integer totals (e.g. 1st serves in, not 1st serve percentage), from which traditional percentages can be calculated.
+
+		There are a few tour-level matches with missing stats. Some are missing because ATP doesn't have them. Others I've deleted because they didn't pass some sanity check (loser won 60% of points, or match time was under 20 minutes, etc). Also, Davis Cup matches are included in the tour-level files, but there are no stats for Davis Cup matches
+
+		---
+
+		Update, 8/4/15
+
+		2015 rankings, results, and stats are now available through last week's play. The results files are named according to the same conventions as the others. The rankings file for the current year is atp_rankings_current.csv.
+	
+========================================================================================================================================================
+	
+		Appendix 02 - Project Sources : 
+			
+			Description :
+				● ATP results (see bellow)
+				● Players information (see bellow)
+				● You can add any other relevant information (check on your own data)
+					○ Countries and Continents
+					○ Tournaments information (e.g. prize money, main sponsors, ...)
+			
+			ATP results : 
+				File(s) : 
+					atp_matches_qual_chall_1999.csv, atp_matches_qual_chall_2000.csv, atp_matches_qual_chall_2001.csv, atp_matches_qual_chall_2002.csv, atp_matches_qual_chall_2003.csv, atp_matches_qual_chall_2004.csv, atp_matches_qual_chall_2005.csv, atp_matches_qual_chall_2006.csv, atp_matches_qual_chall_2007.csv, atp_matches_qual_chall_2008.csv, atp_matches_qual_chall_2009.csv, atp_matches_qual_chall_2010.csv, atp_matches_qual_chall_2011.csv, atp_matches_qual_chall_2012.csv, atp_matches_qual_chall_2013.csv, atp_matches_qual_chall_2014.csv, atp_matches_qual_chall_2015.csv, atp_matches_qual_chall_2016.csv, atp_matches_qual_chall_2017.csv : 
+
+				Common columns for those files (standard) : 
+					tourney_id
+					tourney_name
+					surface
+					draw_size
+					tourney_level
+					tourney_date
+					match_num
+					winner_id
+					winner_seed
+					winner_entry
+					winner_name
+					winner_hand
+					winner_ht
+					winner_ioc
+					winner_age
+					winner_rank
+					winner_rank_points
+					loser_id
+					loser_seed
+					loser_entry
+					loser_name
+					loser_hand
+					loser_ht
+					loser_ioc
+					loser_age
+					loser_rank
+					loser_rank_points
+					score
+					best_of
+					round
+					minutes
+					w_ace
+					w_df
+					w_svpt
+					w_1stIn
+					w_1stWon
+					w_2ndWon
+					w_SvGms
+					w_bpSaved
+					w_bpFaced
+					l_ace
+					l_df
+					l_svpt
+					l_1stIn
+					l_1stWon
+					l_2ndWon
+					l_SvGms
+					l_bpSaved
+					l_bpFaced
+
+				Sample data for "atp_matches_qual_chall_2017.csv" : 
+					tourney_id,tourney_name,surface,draw_size,tourney_level,tourney_date,match_num,winner_id,winner_seed,winner_entry,winner_name,winner_hand,winner_ht,winner_ioc,winner_age,winner_rank,winner_rank_points,loser_id,loser_seed,loser_entry,loser_name,loser_hand,loser_ht,loser_ioc,loser_age,loser_rank,loser_rank_points,score,best_of,round,minutes,w_ace,w_df,w_svpt,w_1stIn,w_1stWon,w_2ndWon,w_SvGms,w_bpSaved,w_bpFaced,l_ace,l_df,l_svpt,l_1stIn,l_1stWon,l_2ndWon,l_SvGms,l_bpSaved,l_bpFaced
+					2017-M020,Brisbane,Hard,32,A,20170102,254,200282,,WC,Alex De Minaur,R,,AUS,17.8754277892,351,132,126207,5,,Francis Tiafoe,R,,USA,18.9514031485,108,550,6-7(4) 6-4 6-4,3,Q2,139,5,6,105,67,48,23,16,3,5,13,2,110,65,43,25,16,6,10,,
+					2017-M020,Brisbane,Hard,32,A,20170102,253,124014,,,Ernesto Escobedo,R,,USA,20.4982888433,141,443,104471,,,Ivan Dodig,R,183,CRO,32.0,147,417,6-3 6-7(3) 6-3,3,Q2,119,12,3,96,47,39,26,16,2,3,16,5,83,53,39,16,14,0,3,,
+					2017-M020,Brisbane,Hard,32,A,20170102,252,106415,3,,Yoshihito Nishioka,L,,JPN,21.2676249144,100,604,105065,,,Tim Smyczek,R,175,USA,29.0102669405,140,447,7-5 6-4,3,Q2,88,0,1,87,47,30,24,11,9,10,2,2,54,25,17,19,11,1,4,,
+					...
+
+			Players information : 
+				File(s) : "atp_players.csv"
+				Columns :
+					player_id
+					first_name
+					last_name
+					hand
+					birth_date
+					country_code
+				Sample data for "atp_players.csv" : 
+					player_id,first_name,last_name,hand,birth_date,country_code
+					100001,Gardnar,Mulloy,R,19131122,USA
+					100002,Pancho,Segura,R,19210620,ECU
+					100003,Frank,Sedgman,R,19271002,AUS	
+					...
+				 
+========================================================================================================================================================
+
+
+SQL Server Database specifications : 
+
+dbo.atp_matches
+	match_id INT IDENTITY(1,1) PRIMARY KEY,
+	tourney_id VARCHAR(50),
+	tourney_name VARCHAR(100),
+	surface VARCHAR(50),
+	draw_size INT,
+	tourney_level CHAR(1),
+	tourney_date DATE,
+	match_num INT,
+	winner_id INT,
+	winner_seed INT,
+	winner_entry VARCHAR(50),
+	winner_name VARCHAR(100),
+	winner_hand CHAR(1),
+	winner_ht INT,
+	winner_ioc VARCHAR(3),
+	winner_age FLOAT,
+	winner_rank INT,
+	winner_rank_points INT,
+	loser_id INT,
+	loser_seed INT,
+	loser_entry VARCHAR(50),
+	loser_name VARCHAR(100),
+	loser_hand CHAR(1),
+	loser_ht INT,
+	loser_ioc VARCHAR(3),
+	loser_age FLOAT,
+	loser_rank INT,
+	loser_rank_points INT,
+	score VARCHAR(50),
+	best_of INT,
+	round VARCHAR(10),
+	minutes INT,
+	w_ace INT,
+	w_df INT,
+	w_svpt INT,
+	w_1stIn INT,
+	w_1stWon INT,
+	w_2ndWon INT,
+	w_SvGms INT,
+	w_bpSaved INT,
+	w_bpFaced INT,
+	l_ace INT,
+	l_df INT,
+	l_svpt INT,
+	l_1stIn INT,
+	l_1stWon INT,
+	l_2ndWon INT,
+	l_SvGms INT,
+	l_bpSaved INT,
+	l_bpFaced INT
+
+
+dbo.atp_players
+	db_player_id INT IDENTITY(1,1) PRIMARY KEY,
+	player_id INT,
+	first_name VARCHAR(50),
+	last_name VARCHAR(50),
+	hand CHAR(1),
+	birth_date DATE,
+	country_code VARCHAR(3)

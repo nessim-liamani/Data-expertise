@@ -1,0 +1,16 @@
+2024-06-28 09:06:12 - INFO - Starting data insertion: 22 lines to be processed.
+2024-06-28 09:06:13 - ERROR - An error occurred: (pyodbc.IntegrityError) ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert explicit value for identity column in table 'atp_players' when IDENTITY_INSERT is set to OFF. (544) (SQLExecDirectW)")
+[SQL: 
+            MERGE INTO atp_players AS target
+            USING #atp_players_temp AS source
+            ON (target.db_player_id = source.db_player_id)
+            WHEN MATCHED THEN
+                UPDATE SET target.player_id = source.player_id, target.first_name = source.first_name, target.last_name = source.last_name, target.hand = source.hand, target.birth_date = source.birth_date, target.country_code = source.country_code
+            WHEN NOT MATCHED THEN
+                INSERT (db_player_id, player_id, first_name, last_name, hand, birth_date, country_code) VALUES (source.db_player_id, source.player_id, source.first_name, source.last_name, source.hand, source.birth_date, source.country_code);
+            ]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-28 09:06:13 - INFO - Data insertion completed: 22 lines processed.
+2024-06-28 09:06:13 - INFO - 22 lines inserted into atp_players.
+2024-06-28 09:06:13 - INFO - Number of errors encountered: 1
+2024-06-28 09:06:13 - INFO - Total execution time: 00:00:00
