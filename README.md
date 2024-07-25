@@ -4,7 +4,7 @@ Welcome to my Data Analyst Portfolio. This repository showcases my skills and pr
 
 ## About Me
 
-I am Nessim Liamani, a Data Analyst specialized in data analysis and visualization, with experience in database administration. I am proficient in statistical analysis, report creation, and problem-solving. My technical skills include Python, SQL, PowerShell, Qlik Sense, Tableau/Power BI, VSCode, SSIS, SSAS, MySQL, SQL Server 2022, and Azure Data Factory. I also have competencies in business management and finance.
+I am Nessim Liamani, a Data Analyst specialized in data analysis and visualization, with experience in database administration. I am proficient in statistical analysis, report creation, and problem-solving. My technical skills include Python, SQL, PowerShell, Power BI/Tableau/Qlik/PlotlyDash, VSCode, SSIS, SSAS, MySQL, SQL Server 2022, Azure Data Factory, and Debian/Windows. I also have competencies in business management and finance.
 
 - **Location:** Brussels, Belgium
 - **Email:** nessim@liamani.com
@@ -15,25 +15,25 @@ I am Nessim Liamani, a Data Analyst specialized in data analysis and visualizati
 I completed a comprehensive Data Analyst training program at Bruxelles Formation DigitalCity, Belgium. The BStorm provided, training covered a wide range of topics as detailed below:
 
 ### List of Modules (trainer name) - full time duration
-1. **CEFORA/KARIBU (Soft Skills)** - Anouchka WALHA - 18 days
-2. **Relational Database Design** - Bastien De Vos - 3 days
-3. **SQL** - Bastien De Vos - 3 days
-4. **Excel Data Processing** - Romain BERNARD - 3 days
-5. **Introduction to Python** - David JELGSERMA - 2 days
-6. **Basic Python Libraries** - Cédric Van Osselaer - 7 days
-7. **E-Learning (Self Study)** - 7 days
-8. **Statistics** - Cédric Van Osselaer - 3 days
-9. **Introduction to Business Intelligence** - Didier UKANDA - 1 day
+01. **CEFORA/KARIBU (Soft Skills)** - Anouchka WALHA - 18 days
+02. **Relational Database Design** - Bastien De Vos - 3 days
+03. **SQL** - Bastien De Vos - 3 days
+04. **Excel Data Processing** - Romain BERNARD - 3 days
+05. **Introduction to Python** - David JELGSERMA - 2 days
+06. **Basic Python Libraries** - Cédric Van Osselaer - 7 days
+07. **E-Learning (Self Study)** - 7 days
+08. **Statistics** - Cédric Van Osselaer - 3 days
+09. **Introduction to Business Intelligence** - Didier UKANDA - 1 day
 10. **Agile & Scrum** - Mélanie GEERTS - 2 days
 11. **Data Warehousing with SSIS** - Bastien De Vos - 5 days
 12. **Azure Data Factory** - Romain Wauman - 2 days
 13. **Tabular SSAS** - Bastien De Vos - 3 days
 14. **Modeling Lab** - Bastien De Vos - 3 days
 15. **Power BI** - Bastien De Vos - 4 days
-16. **Tableau** - Bastien De Vos - 4 days
+16. **Tableau, Qlik** - Bastien De Vos - 4 days
 17. **BI Reporting Lab** - Bastien De Vos - 3 days
-18. **Plotly & Dash** - Romain Wauman - 3 days
-19. **Git** - Romain Wauman - 1 day
+18. **Plotly, Dash & Flask** - Romain Wauman - 3 days
+19. **Git & GitHub** - Sébastien Bya - 1 day
 20. **Data Mining** - Cédric Van Osselaer - 2 days
 21. **Big Data** - Cédric Van Osselaer - 1 day
 22. **MongoDB** - Khun Ly - 2 days
@@ -41,7 +41,7 @@ I completed a comprehensive Data Analyst training program at Bruxelles Formation
 24. **Machine Learning** - Cédric Van Osselaer - 8 days
 25. **Final Project (Self Study)** - 8 days
 
-**Total Duration:** 644 hours training / 99 work days / 144 calendar days
+**Total Duration:** 644 hours training / 99 working days / 144 calendar days
 
 ### Additional Certifications and Trainings
 1. **PC/Network Technician** - Validation De Compétences Fédération WL/BXL, Belgium
