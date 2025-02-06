@@ -1,3 +1,5 @@
+# Algorithmic Government Formation Protocol (AGFP)
+
 ## Guide: Government Formation Process – Past, Present, and Future
 
 ### How Government Formation Works Today
@@ -74,7 +76,7 @@ This guide is intended to help non-technical readers understand both the challen
 
 =============================================================================
 
-# Algorithmic Government Formation Protocol (AGFP)
+## Algorithmic Government Formation Protocol (AGFP)
 
 This repository contains a Python implementation of an "Algorithmic Government Formation Protocol" (AGFP), a simulated rule-based government formation process inspired by the Belgian government formation process. The project demonstrates a modular design for automating and simulating various steps including:
 - Election data publication
@@ -84,7 +86,7 @@ This repository contains a Python implementation of an "Algorithmic Government F
 - Interim (caretaker) government formation
 - Sanctions enforcement for non-compliance
 
-## Project Structure
+### Project Structure
 
 AGFP/
 ├── .gitignore
