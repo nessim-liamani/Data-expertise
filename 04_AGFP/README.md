@@ -89,19 +89,19 @@ This repository contains a Python implementation of an "Algorithmic Government F
 ### Project Structure
 
 AGFP/
-- ├── .gitignore
-- ├── LICENSE
-- ├── README.md
-- ├── requirements.txt
-- ├── agfp/
-- │   ├── __init__.py
-- │   ├── election_data.py
-- │   ├── coalition_calculator.py
-- │   ├── government_formation.py
-- │   ├── portfolio_allocation.py
-- │   ├── interim_government.py
-- │   └── sanctions_manager.py
-- └── main.py
+ ├── .gitignore
+ ├── LICENSE
+ ├── README.md
+ ├── requirements.txt
+ ├── agfp/
+ │   ├── __init__.py
+ │   ├── election_data.py
+ │   ├── coalition_calculator.py
+ │   ├── government_formation.py
+ │   ├── portfolio_allocation.py
+ │   ├── interim_government.py
+ │   └── sanctions_manager.py
+ └── main.py
 
 Files Overview : 
 
