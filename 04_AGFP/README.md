@@ -108,9 +108,9 @@ Files Overview :
 main.py: Entry point that simulates the entire government formation process.
 
 agfp/: Contains modular components:
-    election_data.py: Handles election data and party representation.
-    coalition_calculator.py: Computes and ranks possible coalitions.
-    government_formation.py: Simulates the process of government formation.
-    portfolio_allocation.py: Allocates ministerial portfolios among coalition parties.
-    interim_government.py: Forms a caretaker government if deadlines are exceeded.
-    sanctions_manager.py: Enforces sanctions on obstructive parties.
+- election_data.py: Handles election data and party representation.
+- coalition_calculator.py: Computes and ranks possible coalitions.
+- government_formation.py: Simulates the process of government formation.
+- portfolio_allocation.py: Allocates ministerial portfolios among coalition parties.
+- interim_government.py: Forms a caretaker government if deadlines are exceeded.
+- sanctions_manager.py: Enforces sanctions on obstructive parties.
