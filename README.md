@@ -1,133 +1,77 @@
-# Nessim Liamani - Data Analyst Portfolio
+# Data Analysis Portfolio
 
-Welcome to my Data Analyst Portfolio. This repository showcases my skills and projects in data analysis. Below, you will find details about my training, the modules I completed, and the projects I worked on.
+Welcome to my GitHub Portfolio. This repository showcases various data analysis projects I have worked on, highlighting my expertise in data processing, visualization, and treatment.
 
 ## About Me
 
-I am Nessim Liamani, a Data Analyst specialized in data analysis and visualization, with experience in database administration. I am proficient in statistical analysis, report creation, and problem-solving. My technical skills include Python, SQL, PowerShell, Power BI/Tableau/Qlik/PlotlyDash, VSCode, SSIS, SSAS, MySQL, SQL Server 2022, Azure Data Factory, and Debian/Windows. I also have competencies in business management and finance.
+I am a data analyst with a strong background in data analysis, visualization, and database management. My skills include statistical analysis, report generation, and problem-solving. I have experience working with a wide range of tools and technologies, including Python, SQL, Power BI, Tableau, Qlik, Plotly Dash, VSCode, SSIS, SSAS, MySQL, SQL Server, Azure Data Factory, and both Windows and Linux environments. Additionally, I have knowledge in business management and finance.
 
 - **Location:** Brussels, Belgium
 - **Email:** nessim@liamani.com
 - **Website:** [www.liamani.com](http://www.liamani.com)
 
-## Training
+## Training & Education
 
-I completed a comprehensive Data Analyst training program at Bruxelles Formation DigitalCity, Belgium. The BStorm provided, training covered a wide range of topics as detailed below:
+I have completed extensive training in data analysis, covering various modules such as:
+- Relational Database Design
+- SQL & Data Processing
+- Python for Data Analysis
+- Business Intelligence Tools (Power BI, Tableau, Qlik, SSAS, SSIS)
+- Data Warehousing & ETL Processes
+- Machine Learning Fundamentals
+- Agile & Scrum Methodologies
+- Data Mining & Big Data Concepts
 
-### List of Modules (trainer name) - full time duration
-01. **CEFORA/KARIBU (Soft Skills)** - Anouchka WALHA - 18 days
-02. **Relational Database Design** - Bastien De Vos - 3 days
-03. **SQL** - Bastien De Vos - 3 days
-04. **Excel Data Processing** - Romain BERNARD - 3 days
-05. **Introduction to Python** - David JELGSERMA - 2 days
-06. **Basic Python Libraries** - Cédric Van Osselaer - 7 days
-07. **E-Learning (Self Study)** - 7 days
-08. **Statistics** - Cédric Van Osselaer - 3 days
-09. **Introduction to Business Intelligence** - Didier UKANDA - 1 day
-10. **Agile & Scrum** - Mélanie GEERTS - 2 days
-11. **Data Warehousing with SSIS** - Bastien De Vos - 5 days
-12. **Azure Data Factory** - Romain Wauman - 2 days
-13. **Tabular SSAS** - Bastien De Vos - 3 days
-14. **Modeling Lab** - Bastien De Vos - 3 days
-15. **Power BI** - Bastien De Vos - 4 days
-16. **Tableau, Qlik** - Bastien De Vos - 4 days
-17. **BI Reporting Lab** - Bastien De Vos - 3 days
-18. **Plotly, Dash & Flask** - Romain Wauman - 3 days
-19. **Git & GitHub** - Sébastien Bya - 1 day
-20. **Data Mining** - Cédric Van Osselaer - 2 days
-21. **Big Data** - Cédric Van Osselaer - 1 day
-22. **MongoDB** - Khun Ly - 2 days
-23. **Ethics and GDPR** - David Jelgersma - 1 day
-24. **Machine Learning** - Cédric Van Osselaer - 8 days
-25. **Final Project (Self Study)** - 8 days
-
-**Total Duration:** 644 hours training / 99 working days / 144 calendar days
-
-### Additional Certifications and Trainings
-1. **PC/Network Technician** - Validation De Compétences Fédération WL/BXL, Belgium
-2. **Practical Business Accounting/Finance/Management** - Bruxelles Formation Management, Belgium
-3. **Belgian Master's Equivalence** - ULB, Belgium
-4. **Master in Computer Science and Engineering** - USTHB, Algeria
+Additionally, I have certifications in system and network administration, business management, and practical business finance.
 
 ## Projects
 
-I have worked on several data analysis projects, which are detailed below:
+The projects included in this portfolio revolve around data analysis and treatment, covering various domains such as:
 
-### 1. Sakila Datawarehousing
-An end-to-end data warehousing project using the Sakila database, demonstrating skills in data modeling, ETL processes, and reporting.
+### 1. Algorithmic Government Formation Protocol (AGFP)
+A Python-based rule-driven simulation of government formation in Belgium, automating processes such as election data management, coalition computation, government formation, ministerial allocation, and confidence votes. This project aims to create a more transparent, efficient, and objective decision-making process in political governance.
 
-### 2. Police Fatal Shooting
-Analysis of fatal shootings by police in the US, focusing on data cleaning, exploratory data analysis, and visualization.
+### 2. Revenue and Expenses for Belgian Government
+A Python-based fiscal transparency and tracking system that simulates financial flows across federal, regional, and local levels. It allows for revenue and expenditure data input, budget simulation, and financial reporting to improve public finance transparency.
 
-![Data Pipe](/assets/img/Screenshot 2024-07-01 174451.png)
-![Data Source](/assets/img/Screenshot 2024-07-01 174524.png)
-![ETL Process](/assets/img/Screenshot 2024-07-01 174541.png)
-![Databases](/assets/img/Screenshot 2024-07-01 174554.png)
-![Visualization](/assets/img/Screenshot 2024-07-01 174607.png)
+### 3. Data Warehousing with Sakila Database
+A project focused on end-to-end data warehousing, including ETL processes, data modeling, and visualization.
 
-### 3. Tennis ATP Matches and Players Analysis
-A comprehensive analysis of ATP tennis matches and player performance, showcasing skills in statistical analysis and visualization.
+### 4. Analysis of Police Fatal Shootings
+A data-driven exploration of police fatal shootings in the US, involving data cleaning, exploratory data analysis, and visual reporting.
 
-### 4. Climate Change Data Analysis
-Exploring climate change data to uncover trends and patterns, utilizing various data analysis techniques and visualization tools.
+### 5. Tennis ATP Matches and Player Performance
+A statistical analysis of ATP tennis matches, identifying key player trends and performance metrics.
+
+### 6. Climate Change Data Insights
+Exploring global climate change data, analyzing trends, and creating meaningful visual representations.
 
 ## Professional Experience
 
-### Pauwels Consulting
-**Project Manager & PMO**
-- Managed and updated a site master plan and a long-term investment project at GSK.
-
-### Capgemini Engineering / Ex-ALTRAN
-**Project Manager**
-- Managed multiple complex pharma/engineering projects, ensuring timelines, budgets, quality, and scope while maintaining overall profitability.
-
-### ABB
-**Project Manager**
-- Provided comprehensive support to the project team for successful project execution and delivery within deadlines, budget, quality, and ABB safety framework.
-
-### Thales / CSEE
-**Field Technical Lead**
-- Installed, configured, tested, commissioned, managed, and maintained the metro ticketing system in Algiers.
-
-### CETELEM (BNPP)
-**Network Administrator**
-- Worked with various technologies (Win2003Srv, Exchange, SMS, ISA), PBX administration, and provided helpdesk support for 120 users.
+My professional experience spans roles in data analysis, project management, and IT administration across multiple industries. I have worked on large-scale projects in consulting, finance, engineering, and IT, where I applied data-driven decision-making and analytics solutions.
 
 ## Skills
 
-- Crisis Management
-- Proactivity
-- Autonomy
-- Confidence
-- Technological Watch
+- Data Analysis & Visualization
+- SQL & Database Management
+- Business Intelligence Reporting
+- ETL & Data Warehousing
+- Statistical Analysis
+- Agile & Scrum Methodologies
+- Problem-Solving & Critical Thinking
 
 ## Interests
 
-- IT
-- Entrepreneurship
-- Mathematics
-- Animated Series
-- Auto/Bike Mechanics
-- Geopolitics
-- Cryptocurrencies
+- Data Science & AI
+- Business Intelligence
+- IT & Technology
+- Cryptocurrencies & Blockchain
+- Mathematics & Analytics
 
-## Certifications
+## Certifications & Languages
 
-### Language Proficiency
-- **French:** C2 (mother tongue)
-- **Arabic:** C2 (mother tongue)
-- **English:** B2 (Upper Intermediate)
-- **Dutch:** A1 (Beginer)
-- **Italian:** A1 (Beginer)
+- **Certifications:** System & Network Administration, Business Management, TOSA Excel, PowerPoint, and Word
+- **Languages:** French (C2), Arabic (C2), English (B2), Dutch (A1), Italian (A1)
 
-### IT and Software
-- **System and Network administration: (Windows Server/Linux** Advanced Level
-- **Tosa Excel 2016:** Advanced Level (793/1000)
-- **Tosa PowerPoint 2016:** Advanced Level (768/1000)
-- **Tosa Word 2016:** Basic Level (525/1000)
+Thank you for visiting my portfolio. Feel free to explore my projects and reach out if you have any questions or opportunities!
 
-### Management and Business
-- **Basic Management Knowledge Certificate** - Passed the exam as per the Royal Decree of February 13, 2007
-- **Practical Business Management Training** - Completed training including strategy, finance, marketing, and HR modules
-
-Thank you for visiting my portfolio. Feel free to explore the projects and reach out if you have any questions or opportunities.
