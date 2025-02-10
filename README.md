@@ -4,7 +4,7 @@ Welcome to my GitHub Portfolio. This repository showcases various data analysis 
 
 ## About Me
 
-I am a data analyst with a strong background in data analysis, visualization, and database management. My skills include statistical analysis, report generation, and problem-solving. I have experience working with a wide range of tools and technologies, including Python, SQL, Power BI, Tableau, Qlik, Plotly Dash, VSCode, SSIS, SSAS, MySQL, SQL Server, Azure Data Factory, and both Windows and Linux environments. Additionally, I have knowledge in business management and finance.
+I am a computer scientist and data analyst with a strong background in data analysis, visualization, and database management. My skills include statistical analysis, report generation, and problem-solving. I have experience working with a wide range of tools and technologies, including Python, SQL, Power BI, Tableau, Qlik, Plotly Dash, VSCode, SSIS, SSAS, MySQL, SQL Server, Azure Data Factory, and both Windows and Linux environments. Additionally, I have knowledge in business management and finance.
 
 - **Location:** Brussels, Belgium
 - **Email:** nessim@liamani.com
